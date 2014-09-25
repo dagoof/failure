@@ -19,6 +19,7 @@ func Recover(err *error) {
 		return
 	}
 
+	// if something other than our failure is panicking, let it continue
 	panic(v)
 }
 
